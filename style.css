@@ -1,0 +1,385 @@
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #243047;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background: linear-gradient(135deg, #102a56, #176b87);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    color: #e0efff;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #ffffff;
+    padding: 16px 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    color: #163b68;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0786a5;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    border: 1px solid #e5ebf4;
+    box-shadow: 0 5px 18px rgba(20, 45, 80, 0.06);
+    scroll-margin-top: 85px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 24px rgba(20, 45, 80, 0.10);
+}
+
+section h2 {
+    color: #145c85;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+section p {
+    color: #536176;
+    margin-bottom: 8px;
+}
+
+/* Welcome section */
+#home {
+    background: linear-gradient(135deg, #e4f4ff, #ffffff);
+    border-left: 5px solid #1687ad;
+    padding: 38px 28px;
+}
+
+#home h2 {
+    font-size: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #102a56;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    nav a {
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 22px 18px;
+    }
+
+    #home h2 {
+        font-size: 25px;
+    }
+}
+/* Community feature cards */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #163b68;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.feature-card {
+    background: white;
+    padding: 26px;
+    border-radius: 14px;
+    border: 1px solid #e1eaf3;
+    box-shadow: 0 5px 16px rgba(20, 45, 80, 0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 45, 80, 0.13);
+}
+
+.card-icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    color: #145c85;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #536176;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Fix feature card text and layout */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.feature-card {
+    display: block;
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 26px;
+    overflow-wrap: break-word;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    line-height: 1.4;
+}
+
+.feature-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Modern design improvements */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #243047;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #102a56, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    background: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    display: inline-block;
+    color: #1746a2;
+    text-decoration: none;
+    margin: 5px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e87518;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+main section h2 {
+    color: #1746a2;
+}
+
+a.feature-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+
+.feature-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+footer {
+    background: #102a56;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        margin: 5px 7px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    main section {
+        padding: 18px;
+    }
+}
+/* Join Community Form */
+
+#joinForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+#joinForm label {
+    font-weight: bold;
+}
+
+#joinForm input,
+#joinForm select {
+    padding: 12px;
+    border: 1px solid #ccd5e4;
+    border-radius: 7px;
+    font-size: 16px;
+    background: white;
+}
+
+#joinForm input:focus,
+#joinForm select:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+#joinForm button {
+    padding: 13px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#joinForm button:hover {
+    background: #102a56;
+}
+
+#message {
+    color: #1746a2;
+    font-weight: bold;
+}
+.join-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-button:hover {
+    background: #102a56;
+}

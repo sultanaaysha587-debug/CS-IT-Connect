@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Community | CS & IT Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Join Our Community 🤝</h1>
+    <p>Connect, Learn and Grow Together!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="coding.html">Coding</a>
+</nav>
+
+<main>
+    <section class="welcome">
+        <h2>Become a Member</h2>
+        <p>Fill in your details to introduce yourself to our student community.</p>
+
+        <form id="joinForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="course">Your Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BTech">B.Tech</option>
+                <option value="MTech">M.Tech</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="interest">Area of Interest</label>
+            <select id="interest" name="interest" required>
+                <option value="">Choose an interest</option>
+                <option value="Python">Python Programming</option>
+                <option value="AI/ML">AI and Machine Learning</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+
+            <button type="submit">Join Community</button>
+            <p id="message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>CS & IT Connect | Learn • Build • Grow</p>
+</footer>
+
+<script>
+document.getElementById("joinForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+        "Thank you for your interest! The form is working, but your details have not been saved or sent yet.";
+});
+</script>
+
+</body>
+</html>
